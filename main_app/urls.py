@@ -5,4 +5,5 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
     path('dogindex/', views.dogindex, name='index'),
+    path('dogs/<int:dog_id>/', views.dogs_detail, name='detail'),
 ]
