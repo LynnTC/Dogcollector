@@ -9,6 +9,10 @@
         <p>Breed: {{ dog.breed }}</p>
         <p>Age: {{ dog.age }}</p>
     </div>
+    <div class="card-action">
+        <a href="{% url 'dogs_update' dog.id %}">Edit</a>
+        <a href="{% url 'dogs_delete' dog.id %}">Delete</a>
+    </div>
 </div>
 
 {% endblock %}
